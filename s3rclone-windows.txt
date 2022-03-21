@@ -10,7 +10,18 @@
 3. Extract rclone.exe and move it to C:\S3Tools\
 4. Download and Install WinFSP from http://www.secfs.net/winfsp/rel/
 5. Execute and follow ugly prompt: C:\S3Tools\rclone.exe config   
-6. Test what you can list bucket : C:\S3Tools\rclone.exe ls demo:bucket_name
-7. Mount Bucket as Drive S:        C:\S3Tools\rclone.exe mount demo:bucket_name S: --vfs-cache-mode full
+- New Remote : (nama remote)
+- Option Storage : s3
+- Choose S3 Provider : 17
+- Option env_auth : 1
+- AWS Access ID : (access key from Cloudeka - Deka Box)
+- AWS Secret Key  : (secret key from Cloudeka - Deka Box)
+- Region connect to : (press enter)
+- Option ACL  : (press enter)
+- Advanced Config  : (press enter)
+- Quit
+6. Test what you can list bucket : C:\S3Tools\rclone.exe ls (nama remote):(bucket_name in Deka Box)
+7. Mount Bucket as Drive S:        C:\S3Tools\rclone.exe mount (nama remote):(bucket_name in Deka Box) (mapping drive for ex: S): --vfs-cache-mode full
+- ex: C:\S3Tools\rclone.exe mount s3:demo-bucket x: --vfs-cache-mode full
 8. Create file s3mount.cmd with content of the command from Step7
 9. Copy file s3mount.cmd to C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
