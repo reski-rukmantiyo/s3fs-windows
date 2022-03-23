@@ -25,3 +25,7 @@
 - ex: C:\S3Tools\rclone.exe mount s3:demo-bucket x: --vfs-cache-mode full
 8. Create file s3mount.cmd with content of the command from Step7
 9. Copy file s3mount.cmd to C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+
+#Example
+rclone.exe mount (nama remote):(bucket_name in Deka Box) x: -vv --vfs-cache-mode full --dir-cache-time 5s --poll-interval 5s --buffer-size 64M
