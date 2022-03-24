@@ -16,7 +16,7 @@
 - Option env_auth : 1
 - AWS Access ID : (access key from Cloudeka - Deka Box)
 - AWS Secret Key  : (secret key from Cloudeka - Deka Box)
-- Region connect to : (press enter)
+- Region connect to : (url of dekabox - can be find from Service Portal)
 - Option ACL  : (press enter)
 - Advanced Config  : (press enter)
 - Quit
